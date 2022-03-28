@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento de FlexBox</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            height: 250px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blue;
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum texto para teste usado nesse momento </div>
+    </section>
+
+    <p>Strectch</p>
+    <section class="container strectch">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>Flex-Start</p>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>Flex-End</p>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <h1>Column</h1>
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum texto para teste usado nesse momento </div>
+    </section>
+
+    <p>Strectch</p>
+    <section class="container strectch column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>Flex-Start</p>
+    <section class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>Flex-End</p>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">lorem ipsum oisu meet od</div>
+        <div class="item">Item 3 mais algum testo para teste usado nesse momento </div>
+    </section>
+</body>
+</html>
