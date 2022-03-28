@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Flexbox</title>
+
+    <style>
+        .container{
+            display: flex;
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: brown;
+            padding: 5px;
+            flex: 1;
+            text-align: center;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        .stretch{
+            align-content: stretch;
+            height: auto;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+            height: 500px;
+        }
+        .space-between{
+            align-content: space-between;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p>Strectch</p>
+    <section class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud in culpa qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </section>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </div>
+    <p>Space-Around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </div>
+    <p>Space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+        <div class="item"> eiusmod tempor incididunt ut labore et dolore magna aliqua. nostrud exercitation ullamco  proident</div>
+        <div class="item">consectetur adipiscing elit, sed do qui </div>
+        <div class="item">Lorem ipsum adipiscing</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet, adipiscing</div>
+        <div class="item">consectetur adipiscing</div>
+    </div>
+</body>
+</html>
