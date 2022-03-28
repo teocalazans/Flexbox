@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos do Flex Flow</title>
     <style>
-        .flex-container{
+        .flex-container {
             display: flex;
             max-width: 500px;
             border: 1px solid black;
         }
 
-        .default{
+        .default {
             flex-flow: row nowrap;
         }
 
-        .wrap{
+        .wrap {
             flex-flow: row wrap;
         }
 
-        .item{
+        .item {
             background-color: pink;
             margin: 5px;
             color: black;
@@ -31,6 +32,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>Default: row nowrap</h1>
@@ -41,7 +43,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
     </div>
-    
+
     <h1>Row Wrap</h1>
     <div class="flex-container wrap">
         <div class="item">1</div>
@@ -51,6 +53,7 @@
         <div class="item">5</div>
         <div class="item">6</div>
     </div>
-    
+
 </body>
+
 </html>

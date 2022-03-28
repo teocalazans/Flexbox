@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Fundamentos Flex Direction</title>
 
     <style>
         .flex-container {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
             display: flex;
             list-style: none;
         }
 
-        .flex-item{
+        .flex-item {
             background: blue;
             height: 50px;
             width: 50px;
@@ -20,22 +21,22 @@
             font-size: 20px;
             color: aliceblue;
             text-align: center;
-            margin:5px;
+            margin: 5px;
         }
 
         .row {
             flex-direction: row;
         }
 
-        .row-reverse{
+        .row-reverse {
             flex-direction: row-reverse;
         }
 
-        .row-reverse li{
+        .row-reverse li {
             background-color: yellow;
         }
 
-        .column{
+        .column {
             flex-direction: column;
             float: left;
         }
@@ -44,19 +45,19 @@
             background-color: aquamarine;
         }
 
-        .column-reverse{
+        .column-reverse {
             float: right;
             flex-direction: column-reverse;
         }
 
-        .column-reverse li{
+        .column-reverse li {
             background-color: blueviolet;
         }
     </style>
 </head>
 
 <body>
-    <ul  class="flex-container row">
+    <ul class="flex-container row">
         <li class="flex-item">1</li>
         <li class="flex-item">2</li>
         <li class="flex-item">3</li>
@@ -88,4 +89,5 @@
         <li class="flex-item">5</li>
     </ul>
 </body>
+
 </html>
