@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flexbox - align-self</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background-color: red;
+            color: aliceblue;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ROW</h1>
+    <p>AUTO</p>
+    <section class="flex-container">
+        <div class="item auto">Athena</div>
+        <div class="item auto">Era uma vez um freguês muito doido que achava que era cliente</div>
+        <div class="item auto">53710</div>
+        <div class="item auto">baritrica-composto</div>
+    </section>
+    <p>Align-Self Diferentes</p>
+    <section class="flex-container">
+        <div class="item start">Athena</div>
+        <div class="item auto">Era uma vez um freguês muito doido que achava que era cliente</div>
+        <div class="item end">53710</div>
+        <div class="item stretch">baritrica-composto</div>
+    </section>
+    
+    <h1>Column</h1>
+    <p>AUTO</p>
+    <section class="flex-container column">
+        <div class="item auto">Athena</div>
+        <div class="item auto">Era uma vez um freguês muito doido que achava que era cliente</div>
+        <div class="item auto">53710</div>
+        <div class="item auto">baritrica-composto</div>
+    </section>
+    <p>Align-Self Diferentes</p>
+    <section class="flex-container column">
+        <div class="item start">Athena</div>
+        <div class="item auto">Era uma vez um freguês muito doido que achava que era cliente</div>
+        <div class="item end">53710</div>
+        <div class="item stretch">baritrica-composto</div>
+    </section>
+</body>
+
+</html>
